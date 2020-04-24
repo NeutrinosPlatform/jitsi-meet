@@ -22,7 +22,6 @@
 		0BEA5C391F7B8F73000D0AB4 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEA5C381F7B8F73000D0AB4 /* ExtensionDelegate.swift */; };
 		0BEA5C3B1F7B8F73000D0AB4 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEA5C3A1F7B8F73000D0AB4 /* ComplicationController.swift */; };
 		0BEA5C3D1F7B8F73000D0AB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BEA5C3C1F7B8F73000D0AB4 /* Assets.xcassets */; };
-		0BEA5C411F7B8F73000D0AB4 /* JitsiMeetCompanion.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 0BEA5C251F7B8F73000D0AB4 /* JitsiMeetCompanion.app */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
@@ -32,23 +31,6 @@
 		E588011722789D43008B0561 /* JitsiMeetContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58801132278944E008B0561 /* JitsiMeetContext.swift */; };
 		E5C97B63227A1EB400199214 /* JitsiMeetCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C97B62227A1EB400199214 /* JitsiMeetCommands.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		0BEA5C331F7B8F73000D0AB4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0BEA5C301F7B8F73000D0AB4;
-			remoteInfo = "JitsiMeetCompanion Extension";
-		};
-		0BEA5C3F1F7B8F73000D0AB4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0BEA5C241F7B8F73000D0AB4;
-			remoteInfo = JitsiMeetCompanion;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		0B26BE701EC5BC3C00EEFB41 /* Embed Frameworks */ = {
@@ -80,7 +62,6 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				0BEA5C411F7B8F73000D0AB4 /* JitsiMeetCompanion.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,7 +237,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				0BEA5C341F7B8F73000D0AB4 /* PBXTargetDependency */,
 			);
 			name = JitsiMeetCompanion;
 			productName = JitsiMeetCompanion;
@@ -301,7 +281,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				0BEA5C401F7B8F73000D0AB4 /* PBXTargetDependency */,
 			);
 			name = "jitsi-meet";
 			productName = "Jitsi Meet";
@@ -329,7 +308,7 @@
 					};
 					13B07F861A680F5B00A75B9A = {
 						DevelopmentTeam = AUV82596VW;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.SafariKeychain = {
 								enabled = 1;
@@ -558,19 +537,6 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		0BEA5C341F7B8F73000D0AB4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 0BEA5C301F7B8F73000D0AB4 /* JitsiMeetCompanion Extension */;
-			targetProxy = 0BEA5C331F7B8F73000D0AB4 /* PBXContainerItemProxy */;
-		};
-		0BEA5C401F7B8F73000D0AB4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 0BEA5C241F7B8F73000D0AB4 /* JitsiMeetCompanion */;
-			targetProxy = 0BEA5C3F1F7B8F73000D0AB4 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
 		0BEA5C271F7B8F73000D0AB4 /* Interface.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -733,7 +699,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconDebug;
 				CODE_SIGN_ENTITLEMENTS = app.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_TEAM = AUV82596VW;
@@ -755,9 +721,9 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.jitsi.meet;
+				PRODUCT_BUNDLE_IDENTIFIER = co.neutrinos.meet;
 				PRODUCT_NAME = "Neutrinos Meet";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = "Neutrinos Meet";
 			};
 			name = Debug;
 		};
@@ -769,7 +735,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconRelease;
 				CODE_SIGN_ENTITLEMENTS = app.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = AUV82596VW;
 				ENABLE_BITCODE = YES;
@@ -790,9 +756,9 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.jitsi.meet;
+				PRODUCT_BUNDLE_IDENTIFIER = co.neutrinos.meet;
 				PRODUCT_NAME = "Neutrinos Meet";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = "Neutrinos Meet";
 			};
 			name = Release;
 		};
