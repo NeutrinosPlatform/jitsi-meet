@@ -18,7 +18,7 @@ import { IncomingCallApp } from './features/mobile/incoming-call';
 
 // It's crucial that the native loggers are created ASAP, not to lose any data.
 import { _initLogging } from './features/base/logging/functions';
-
+console.disableYellowBox = true;
 declare var __DEV__;
 
 /**
