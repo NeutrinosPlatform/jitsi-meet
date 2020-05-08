@@ -26,6 +26,9 @@ import RaiseHandButton from './RaiseHandButton';
 import ToggleCameraButton from './ToggleCameraButton';
 import styles from './styles';
 
+import {requireNativeComponent} from 'react-native';
+const RecordComponent = requireNativeComponent('RecordComponent')
+
 /**
  * The type of the React {@code Component} props of {@link OverflowMenu}.
  */
@@ -126,6 +129,7 @@ class OverflowMenu extends PureComponent<Props, State> {
                 onCancel = { this._onCancel }
                 onSwipe = { this._onSwipe }
                 renderHeader = { this._renderMenuExpandToggle }>
+                <RecordComponent style={{width: 50, height: 50}} />
                 <AudioRouteButton { ...buttonProps } />
                 <InviteButton { ...buttonProps } />
                 <AudioOnlyButton { ...buttonProps } />

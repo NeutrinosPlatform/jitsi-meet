@@ -26,6 +26,15 @@
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		187BC37424659901009E1AAC /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 187BC37324659901009E1AAC /* ReplayKit.framework */; };
+		187BC37824659901009E1AAC /* SampleHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 187BC37724659901009E1AAC /* SampleHandler.m */; };
+		187BC37F24659901009E1AAC /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 187BC37324659901009E1AAC /* ReplayKit.framework */; };
+		187BC38124659901009E1AAC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 187BC38024659901009E1AAC /* UIKit.framework */; };
+		187BC38524659901009E1AAC /* BroadcastSetupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 187BC38424659901009E1AAC /* BroadcastSetupViewController.m */; };
+		187BC38A24659901009E1AAC /* ScreenRecordingExtSetupUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 187BC37E24659901009E1AAC /* ScreenRecordingExtSetupUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		187BC38D24659901009E1AAC /* ScreenRecordingExt.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 187BC37224659901009E1AAC /* ScreenRecordingExt.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		187BC39624659993009E1AAC /* RecordComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187BC39524659993009E1AAC /* RecordComponent.swift */; };
+		187BC398246599F3009E1AAC /* RecordComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 187BC397246599F3009E1AAC /* RecordComponent.m */; };
 		695AF3ED6F686F9C5EE40F9A /* libPods-jitsi-meet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 489E8EFE2C720D10F5961AEF /* libPods-jitsi-meet.a */; };
 		DE4C456121DE1E4E00EA0709 /* FIRUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = DE4C455F21DE1E4E00EA0709 /* FIRUtilities.m */; };
 		E588011722789D43008B0561 /* JitsiMeetContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58801132278944E008B0561 /* JitsiMeetContext.swift */; };
@@ -39,6 +48,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = 0BEA5C301F7B8F73000D0AB4;
 			remoteInfo = "JitsiMeetCompanion Extension";
+		};
+		187BC38724659901009E1AAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 187BC37D24659901009E1AAC;
+			remoteInfo = ScreenRecordingExtSetupUI;
+		};
+		187BC38B24659901009E1AAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 187BC37124659901009E1AAC;
+			remoteInfo = ScreenRecordingExt;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -76,6 +99,18 @@
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		187BC38924659901009E1AAC /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				187BC38D24659901009E1AAC /* ScreenRecordingExt.appex in Embed App Extensions */,
+				187BC38A24659901009E1AAC /* ScreenRecordingExtSetupUI.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -105,6 +140,19 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		187BC37224659901009E1AAC /* ScreenRecordingExt.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ScreenRecordingExt.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		187BC37324659901009E1AAC /* ReplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReplayKit.framework; path = System/Library/Frameworks/ReplayKit.framework; sourceTree = SDKROOT; };
+		187BC37624659901009E1AAC /* SampleHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SampleHandler.h; sourceTree = "<group>"; };
+		187BC37724659901009E1AAC /* SampleHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleHandler.m; sourceTree = "<group>"; };
+		187BC37924659901009E1AAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		187BC37E24659901009E1AAC /* ScreenRecordingExtSetupUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ScreenRecordingExtSetupUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		187BC38024659901009E1AAC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		187BC38324659901009E1AAC /* BroadcastSetupViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BroadcastSetupViewController.h; sourceTree = "<group>"; };
+		187BC38424659901009E1AAC /* BroadcastSetupViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BroadcastSetupViewController.m; sourceTree = "<group>"; };
+		187BC38624659901009E1AAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		187BC39424659992009E1AAC /* jitsi-meet-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "jitsi-meet-Bridging-Header.h"; sourceTree = "<group>"; };
+		187BC39524659993009E1AAC /* RecordComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordComponent.swift; sourceTree = "<group>"; };
+		187BC397246599F3009E1AAC /* RecordComponent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecordComponent.m; sourceTree = "<group>"; };
 		4670A512A688E2DC34528282 /* Pods-jitsi-meet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jitsi-meet.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-jitsi-meet/Pods-jitsi-meet.debug.xcconfig"; sourceTree = "<group>"; };
 		489E8EFE2C720D10F5961AEF /* libPods-jitsi-meet.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-jitsi-meet.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3B083EB1D4955FF0069CEE7 /* app.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = app.entitlements; sourceTree = "<group>"; };
@@ -132,6 +180,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		187BC36F24659901009E1AAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				187BC37424659901009E1AAC /* ReplayKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		187BC37B24659901009E1AAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				187BC37F24659901009E1AAC /* ReplayKit.framework in Frameworks */,
+				187BC38124659901009E1AAC /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1F021A8A5B056078665DE530 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -148,6 +213,8 @@
 				0B26BE6D1EC5BC3C00EEFB41 /* JitsiMeet.framework */,
 				0BD6B4361EF82A6B00D1F4CD /* WebRTC.framework */,
 				489E8EFE2C720D10F5961AEF /* libPods-jitsi-meet.a */,
+				187BC37324659901009E1AAC /* ReplayKit.framework */,
+				187BC38024659901009E1AAC /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -195,8 +262,31 @@
 				0BBD021F212EB69D00CCB19F /* Types.h */,
 				0B412F1D1EDEE6E800B1A0A6 /* ViewController.h */,
 				0B412F1E1EDEE6E800B1A0A6 /* ViewController.m */,
+				187BC39524659993009E1AAC /* RecordComponent.swift */,
+				187BC39424659992009E1AAC /* jitsi-meet-Bridging-Header.h */,
+				187BC397246599F3009E1AAC /* RecordComponent.m */,
 			);
 			path = src;
+			sourceTree = "<group>";
+		};
+		187BC37524659901009E1AAC /* ScreenRecordingExt */ = {
+			isa = PBXGroup;
+			children = (
+				187BC37624659901009E1AAC /* SampleHandler.h */,
+				187BC37724659901009E1AAC /* SampleHandler.m */,
+				187BC37924659901009E1AAC /* Info.plist */,
+			);
+			path = ScreenRecordingExt;
+			sourceTree = "<group>";
+		};
+		187BC38224659901009E1AAC /* ScreenRecordingExtSetupUI */ = {
+			isa = PBXGroup;
+			children = (
+				187BC38324659901009E1AAC /* BroadcastSetupViewController.h */,
+				187BC38424659901009E1AAC /* BroadcastSetupViewController.m */,
+				187BC38624659901009E1AAC /* Info.plist */,
+			);
+			path = ScreenRecordingExtSetupUI;
 			sourceTree = "<group>";
 		};
 		5E96ADD5E49F3B3822EF9A52 /* Pods */ = {
@@ -212,6 +302,8 @@
 			isa = PBXGroup;
 			children = (
 				B3B083EB1D4955FF0069CEE7 /* app.entitlements */,
+				187BC37524659901009E1AAC /* ScreenRecordingExt */,
+				187BC38224659901009E1AAC /* ScreenRecordingExtSetupUI */,
 				0B26BE711EC5BC4D00EEFB41 /* Frameworks */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				13B07FAE1A68108700A75B9A /* src */,
@@ -229,6 +321,8 @@
 				13B07F961A680F5B00A75B9A /* Neutrinos Meet.app */,
 				0BEA5C251F7B8F73000D0AB4 /* JitsiMeetCompanion.app */,
 				0BEA5C311F7B8F73000D0AB4 /* JitsiMeetCompanion Extension.appex */,
+				187BC37224659901009E1AAC /* ScreenRecordingExt.appex */,
+				187BC37E24659901009E1AAC /* ScreenRecordingExtSetupUI.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -288,15 +382,52 @@
 				DE11877A21EE09640078D059 /* Setup Google reverse URL handler */,
 				DE4F6D6E22005C0400DE699E /* Setup Dropbox */,
 				0BEA5C491F7B8F73000D0AB4 /* Embed Watch Content */,
+				187BC38924659901009E1AAC /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				187BC38824659901009E1AAC /* PBXTargetDependency */,
+				187BC38C24659901009E1AAC /* PBXTargetDependency */,
 			);
 			name = "jitsi-meet";
 			productName = "Jitsi Meet";
 			productReference = 13B07F961A680F5B00A75B9A /* Neutrinos Meet.app */;
 			productType = "com.apple.product-type.application";
+		};
+		187BC37124659901009E1AAC /* ScreenRecordingExt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 187BC39124659901009E1AAC /* Build configuration list for PBXNativeTarget "ScreenRecordingExt" */;
+			buildPhases = (
+				187BC36E24659901009E1AAC /* Sources */,
+				187BC36F24659901009E1AAC /* Frameworks */,
+				187BC37024659901009E1AAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScreenRecordingExt;
+			productName = ScreenRecordingExt;
+			productReference = 187BC37224659901009E1AAC /* ScreenRecordingExt.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		187BC37D24659901009E1AAC /* ScreenRecordingExtSetupUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 187BC38E24659901009E1AAC /* Build configuration list for PBXNativeTarget "ScreenRecordingExtSetupUI" */;
+			buildPhases = (
+				187BC37A24659901009E1AAC /* Sources */,
+				187BC37B24659901009E1AAC /* Frameworks */,
+				187BC37C24659901009E1AAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScreenRecordingExtSetupUI;
+			productName = ScreenRecordingExtSetupUI;
+			productReference = 187BC37E24659901009E1AAC /* ScreenRecordingExtSetupUI.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -319,7 +450,8 @@
 					};
 					13B07F861A680F5B00A75B9A = {
 						DevelopmentTeam = AUV82596VW;
-						ProvisioningStyle = Automatic;
+						LastSwiftMigration = 1130;
+						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.SafariKeychain = {
 								enabled = 1;
@@ -328,6 +460,16 @@
 								enabled = 1;
 							};
 						};
+					};
+					187BC37124659901009E1AAC = {
+						CreatedOnToolsVersion = 11.3.1;
+						DevelopmentTeam = AUV82596VW;
+						ProvisioningStyle = Manual;
+					};
+					187BC37D24659901009E1AAC = {
+						CreatedOnToolsVersion = 11.3.1;
+						DevelopmentTeam = AUV82596VW;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -347,6 +489,8 @@
 				13B07F861A680F5B00A75B9A /* jitsi-meet */,
 				0BEA5C241F7B8F73000D0AB4 /* JitsiMeetCompanion */,
 				0BEA5C301F7B8F73000D0AB4 /* JitsiMeetCompanion Extension */,
+				187BC37124659901009E1AAC /* ScreenRecordingExt */,
+				187BC37D24659901009E1AAC /* ScreenRecordingExtSetupUI */,
 			);
 		};
 /* End PBXProject section */
@@ -376,6 +520,20 @@
 				0B412F211EDEE95300B1A0A6 /* Main.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		187BC37024659901009E1AAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		187BC37C24659901009E1AAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -539,10 +697,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				187BC398246599F3009E1AAC /* RecordComponent.m in Sources */,
 				0B412F1F1EDEE6E800B1A0A6 /* ViewController.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				187BC39624659993009E1AAC /* RecordComponent.swift in Sources */,
 				DE4C456121DE1E4E00EA0709 /* FIRUtilities.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		187BC36E24659901009E1AAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				187BC37824659901009E1AAC /* SampleHandler.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		187BC37A24659901009E1AAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				187BC38524659901009E1AAC /* BroadcastSetupViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -553,6 +729,16 @@
 			isa = PBXTargetDependency;
 			target = 0BEA5C301F7B8F73000D0AB4 /* JitsiMeetCompanion Extension */;
 			targetProxy = 0BEA5C331F7B8F73000D0AB4 /* PBXContainerItemProxy */;
+		};
+		187BC38824659901009E1AAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 187BC37D24659901009E1AAC /* ScreenRecordingExtSetupUI */;
+			targetProxy = 187BC38724659901009E1AAC /* PBXContainerItemProxy */;
+		};
+		187BC38C24659901009E1AAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 187BC37124659901009E1AAC /* ScreenRecordingExt */;
+			targetProxy = 187BC38B24659901009E1AAC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -716,9 +902,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconDebug;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = app.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_TEAM = AUV82596VW;
@@ -740,9 +927,12 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.jitsi.meet;
+				PRODUCT_BUNDLE_IDENTIFIER = co.neutrinos.meet;
 				PRODUCT_NAME = "Neutrinos Meet";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = "Neutrinos Meet with app Groups";
+				SWIFT_OBJC_BRIDGING_HEADER = "src/jitsi-meet-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -752,9 +942,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconRelease;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = app.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = AUV82596VW;
 				ENABLE_BITCODE = YES;
@@ -775,9 +966,119 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.jitsi.meet;
+				PRODUCT_BUNDLE_IDENTIFIER = co.neutrinos.meet;
 				PRODUCT_NAME = "Neutrinos Meet";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = "Neutrinos Meet with app Groups";
+				SWIFT_OBJC_BRIDGING_HEADER = "src/jitsi-meet-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		187BC38F24659901009E1AAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = AUV82596VW;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = ScreenRecordingExtSetupUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = co.neutrinos.meet.ScreenRecordingExtSetupUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Neutrinos meet extension UI";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		187BC39024659901009E1AAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = AUV82596VW;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = ScreenRecordingExtSetupUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = co.neutrinos.meet.ScreenRecordingExtSetupUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Neutrinos meet extension UI";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		187BC39224659901009E1AAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = AUV82596VW;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = ScreenRecordingExt/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = co.neutrinos.meet.ScreenRecordingExt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Neutrinos Meet Extension";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		187BC39324659901009E1AAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = AUV82596VW;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = ScreenRecordingExt/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = co.neutrinos.meet.ScreenRecordingExt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Neutrinos Meet Extension";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -921,6 +1222,24 @@
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
 				13B07F951A680F5B00A75B9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		187BC38E24659901009E1AAC /* Build configuration list for PBXNativeTarget "ScreenRecordingExtSetupUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				187BC38F24659901009E1AAC /* Debug */,
+				187BC39024659901009E1AAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		187BC39124659901009E1AAC /* Build configuration list for PBXNativeTarget "ScreenRecordingExt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				187BC39224659901009E1AAC /* Debug */,
+				187BC39324659901009E1AAC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
